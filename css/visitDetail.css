@@ -1,0 +1,155 @@
+body {
+  background: url(../img/bg.jpg) no-repeat;
+  background-attachment: fixed;
+  width: 100%;
+  overflow-x: hidden;
+   }
+  
+
+#visitDetail{
+    width: 80%;
+    float: right;
+    color: #fff;
+} 
+#visitDetail .table-bordered{
+	width: 88%;
+	border-color: #526fae !important;
+}
+.table-bordered>tbody>tr>td, 
+.table-bordered>tbody>tr>th, 
+.table-bordered>tfoot>tr>td, 
+.table-bordered>tfoot>tr>th, 
+.table-bordered>thead>tr>td, 
+.table-bordered>thead>tr>th{
+	border: 1px solid #4c6bac;
+}
+#visitDetail .table-bordered tr:nth-child(odd){
+	background: #284e92;
+}
+#pager{
+	margin-right: 140px;
+}
+/**
+ * 
+ *消息中心
+ *
+ */
+#information{
+	width: 80%;
+	float: right;
+	color: #fff;
+
+}
+#information .table{width: 88%;}
+#information .btn-group-justified{width: 88%;margin: 10px 0;}
+#information .table-bordered tbody tr:nth-child(even){
+	background: #284e92;
+}#information .table-bordered thead{
+	background: #284e92;
+}
+#information .btn-default{
+	background: #274f95;
+	border-color: #4c6bac;
+	color: #fff;
+
+}
+
+#information .btn-default:hover{
+	background:#2a4f91;
+}
+#information .btn{
+	padding: 14px 10px;
+	position: relative;
+}
+#information .btn>.radios{
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	border-radius: 3px;
+	text-align: center;
+	line-height: 15px;
+	background: red;
+}
+.table-bordered {
+    border: none;
+}
+
+
+
+
+/*
+ 
+ * 用户中心
+ * 
+ * */
+#user{
+	width: 80%;
+	float: right;
+	color: #fff;
+	padding-right: 15px;
+	
+}
+#user .h3{
+	font-size: 16px;
+	background: #275198;
+	height: 42px;
+	line-height: 42px;
+	padding-left: 20px;
+}
+#user .xiugai{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+#user .xiugai i{
+	font-size: 20px;
+}
+#user .xiugai>button{
+	width: 120px;
+	height: 40px;
+	line-height: 40px;
+	border:1px solid #FFF;
+	border-radius: 5px;
+	background: none;
+}
+#user ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	padding-left: 10px;
+}
+#user ul li{
+	margin: 10px 0;
+}
+#user button{
+	width: 120px;
+	height: 30px;
+	line-height: 30px;
+	border:1px solid #FFF;
+	border-radius: 5px;
+	background: none;
+	margin-left: 10px;
+}
+@media (max-width: 767px) {
+	#visitDetail{width: 100%;float: none; }
+	#visitDetail .table-bordered{
+		width: 100%;
+	}
+	#visitDetail .hid{display: none;}
+	#pager{
+		float: none;
+		margin-right: 0px;
+	}
+	#information{
+	width: 100%;
+	float: none;
+
+}
+	#information .table{width: 100%;}
+	#information .btn-group-justified{width: 100%;margin: 10px 0;}
+	#user{
+		width: 100%;
+		padding:0 15px;
+		
+	}
+}
