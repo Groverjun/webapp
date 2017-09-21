@@ -16,17 +16,11 @@
 					color: '#fff'
 				}
 			},
-			axisLine: {
-				lineStyle: {
-					color: 'yellow',
-					width: 8, //这里是为了突出显示加上的，可以去掉
-				}
-			},
 			series: [{
 					name: '访问来源',
 					type: 'pie',
 					selectedMode: 'single',
-					radius: [0, '60%'],
+					 radius : ['50%','70%'],
 					center: ['65%', '55%'],
 					label: {
 						normal: {
@@ -41,7 +35,9 @@
 					data: [{
 							value: 40,
 							name: '百度',
-							selected: true
+							textStyle:{color:"red"},
+							selected: true,
+							
 						},
 						{
 							value: 10,
@@ -91,7 +87,7 @@
 			},
 
 			legend: {
-				data: ['主词数量', '产品词数量'],
+				data: ['主词数量', '产品词数量', '地区产品词数量', '产品行业词数量', '地区产品行业词数量'],
 				textStyle: {
 					color: '#fff'
 				}
@@ -114,7 +110,6 @@
 			}],
 			yAxis: [{
 					type: 'value',
-					//          name: '水量',
 					min: 0,
 					max: 1200,
 					interval: 200,
@@ -127,17 +122,7 @@
 							color: '#fff'
 						}
 					}
-				},
-				{
-					type: 'value',
-					name: '温度',
-					min: 0,
-					max: 25,
-					interval: 5,
-					axisLabel: {
-						formatter: '{value} °C'
-					}
-				}
+			},
 			],
 			series: [{
 					name: '主词数量',
@@ -199,6 +184,96 @@
 						},
 					]
 				},
+								{
+					name: '地区产品词数量',
+					type: 'bar',
+					data: [{
+							value: 400,
+							name: '百度',
+							selected: true
+						},
+						{
+							value: 500,
+							name: '搜狗'
+						},
+						{
+							value: 5,
+							name: '360'
+						},
+						{
+							value: 200,
+							name: '百度移动'
+						},
+						{
+							value: 330,
+							name: '搜狗移动'
+						},
+						{
+							value: 150,
+							name: '360移动'
+						},
+					]
+				},
+								{
+					name: '产品行业词数量',
+					type: 'bar',
+					data: [{
+							value: 400,
+							name: '百度',
+							selected: true
+						},
+						{
+							value: 500,
+							name: '搜狗'
+						},
+						{
+							value: 5,
+							name: '360'
+						},
+						{
+							value: 200,
+							name: '百度移动'
+						},
+						{
+							value: 330,
+							name: '搜狗移动'
+						},
+						{
+							value: 150,
+							name: '360移动'
+						},
+					]
+				},
+								{
+					name: '地区产品行业词数量',
+					type: 'bar',
+					data: [{
+							value: 400,
+							name: '百度',
+							selected: true
+						},
+						{
+							value: 500,
+							name: '搜狗'
+						},
+						{
+							value: 5,
+							name: '360'
+						},
+						{
+							value: 200,
+							name: '百度移动'
+						},
+						{
+							value: 330,
+							name: '搜狗移动'
+						},
+						{
+							value: 150,
+							name: '360移动'
+						},
+					]
+				}
 			]
 		};
 

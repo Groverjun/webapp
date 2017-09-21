@@ -49,6 +49,8 @@ body{
 }
  #C_main{
      margin-top: 60px;
+     display: flex;
+     justify-content:space-betweens;
      #C_left{
         width: 25%;
         .list-group-item{

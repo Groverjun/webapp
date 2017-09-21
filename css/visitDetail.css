@@ -38,10 +38,11 @@ body {
 	width: 80%;
 	float: right;
 	color: #fff;
+	
 
 }
 #information .table{width: 88%;}
-#information .btn-group-justified{width: 88%;margin: 10px 0;}
+#information .btn-group-justified{width: 88%;margin:0;margin-bottom: 10px;}
 #information .table-bordered tbody tr:nth-child(even){
 	background: #284e92;
 }#information .table-bordered thead{
@@ -86,7 +87,7 @@ body {
 	width: 80%;
 	float: right;
 	color: #fff;
-	padding-right: 15px;
+	padding:0 15px;
 	
 }
 #user .h3{
@@ -95,6 +96,7 @@ body {
 	height: 42px;
 	line-height: 42px;
 	padding-left: 20px;
+	margin: 0;
 }
 #user .xiugai{
 	display: flex;

@@ -41,7 +41,9 @@ body {
   #commonality #C_header .sho {
     display: none; } }
 #commonality #C_main {
-  margin-top: 60px; }
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-betweens; }
   #commonality #C_main #C_left {
     width: 25%; }
     #commonality #C_main #C_left .list-group-item {

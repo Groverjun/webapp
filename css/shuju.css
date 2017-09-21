@@ -47,7 +47,10 @@ body {
     display: none; } }
 
 #shuju {
-  margin-top: 60px; }
+width: 0%;
+  
+}
+#shuju .SEO .table-bordered{border: 1px solid #817fac;}
   #shuju .shuju_Mleft {
     width: 25%; }
     #shuju .shuju_Mleft .list-group-item {
@@ -148,15 +151,45 @@ body {
       background: none;
       padding: 0; }
 	#shuju .shuju_Mright .SEO .seoa{
-		height: 181px;
-		background:#58477e;
+		padding: 52px 10px;
+		background:rgba(90,92,148,0.8);
+		display: flex;
+		justify-content: space-between;
+	}
+	#shuju .shuju_Mright .SEO .seoa>div{
+		flex-shrink: 50%;
+	}
+	#shuju .shuju_Mright .SEO .seoa h3{
+		margin: 0;
+		padding: 0;
+		color: #fff;
+		font-size: 28px;
+		color: #49fff9;
+		text-align: center;
+	}
+	#shuju .shuju_Mright .SEO .seoa p{
+		margin: 0;
+		padding: 0;
+		color: #fff;
+		text-align: center;
+		margin-top: 24px;
+		font-size: 10px;
 	}
 	#shuju .shuju_Mright .SEO #ming{
 		margin-right: 250px;
+		width: 120px;
+		height: 32px;
+		background:#506ca7;
+		color: #fff;
+		margin-bottom: 5px;
+		border: 1px solid #fff;
 	}
 @media (max-width: 767px) {
   .shuju_Mleft {
     display: none; }
+    #shuju{
+    	width: 100% !important;
+    }
   .shuju_Mright {
     width: 100% !important;
     float: none !important; }
@@ -164,6 +197,5 @@ body {
       width: 100% !important; } 
     #shuju .shuju_Mright .SEO #ming{
 		margin-right:0;
-	}  
-      
+	}       
       }
