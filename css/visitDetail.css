@@ -5,14 +5,20 @@ body {
   overflow-x: hidden;
    }
   
-
+.carousel-control{
+	display: flex;
+	align-items: center;
+	justify-content:center;
+	font-size: 100px;
+}
 #visitDetail{
-    width: 80%;
+    width: 100%;
     float: right;
     color: #fff;
+    padding: 0 10px;
 } 
 #visitDetail .table-bordered{
-	width: 88%;
+	width: 100%;
 	border-color: #526fae !important;
 }
 .table-bordered>tbody>tr>td, 
@@ -27,22 +33,29 @@ body {
 	background: #284e92;
 }
 #pager{
-	margin-right: 140px;
+
 }
+.pagination>li>a:focus, .pagination>li>a:hover, .pagination>li>span:focus, .pagination>li>span:hover {
+    z-index: 2;
+    color: #fff;
+    background-color: #53628e;
+    border-color: #ddd;
+}
+.pagination>li>a, .pagination>li>span{background:transparent;color: #fff;}
 /**
  * 
  *消息中心
  *
  */
 #information{
-	width: 80%;
+	width: 100%;
 	float: right;
 	color: #fff;
-	
+	padding: 0 10px;
 
 }
-#information .table{width: 88%;}
-#information .btn-group-justified{width: 88%;margin:0;margin-bottom: 10px;}
+#information .table{width: 100%;}
+#information .btn-group-justified{width: 100%;margin:0;margin-bottom: 10px;}
 #information .table-bordered tbody tr:nth-child(even){
 	background: #284e92;
 }#information .table-bordered thead{
@@ -84,7 +97,7 @@ body {
  * 
  * */
 #user{
-	width: 80%;
+	width: 100%;
 	float: right;
 	color: #fff;
 	padding:0 15px;
@@ -113,6 +126,7 @@ body {
 	border:1px solid #FFF;
 	border-radius: 5px;
 	background: none;
+	margin-top: 15px;
 }
 #user ul{
 	list-style: none;
@@ -132,7 +146,9 @@ body {
 	background: none;
 	margin-left: 10px;
 }
+#C_right{width: 75%;}
 @media (max-width: 767px) {
+	#C_right{width: 100%;}
 	#visitDetail{width: 100%;float: none; }
 	#visitDetail .table-bordered{
 		width: 100%;
